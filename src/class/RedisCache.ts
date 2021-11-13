@@ -1,7 +1,6 @@
-import { createClient} from 'redis';
-import {CoreCache, ICoreKernelModule, IStore} from "@grandlinex/core";
+import { createClient } from 'redis';
+import { CoreCache, ICoreKernelModule, IStore } from '@grandlinex/core';
 import { RedisClientType } from 'redis/dist/lib/client';
-
 
 type RedisClient = RedisClientType<any, any> | null;
 /**
@@ -25,10 +24,10 @@ export default abstract class RedisCache extends CoreCache {
    */
   async start(): Promise<void> {
     const store = this.getModule().getKernel().getConfigStore() as IStore;
-    const pw=store.get("REDIS_PASSWORD");
-    const url=store.get("REDIS_URL");
-    const port=store.get("REDIS_PORT");
-    if (!url||!port) {
+    const pw = store.get('REDIS_PASSWORD');
+    const url = store.get('REDIS_URL');
+    const port = store.get('REDIS_PORT');
+    if (!url || !port) {
       throw new Error('NO REDIS CONFIG FOUND');
     }
     this.client = createClient({
