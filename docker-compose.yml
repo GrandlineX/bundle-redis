@@ -1,0 +1,9 @@
+version: '3'
+services:
+  dev-redis:
+    command: redis-server
+    image: redis:alpine
+    ports:
+      - "6379:6379"
+    environment:
+      - REDIS_REPLICATION_MODE=master
