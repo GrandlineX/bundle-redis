@@ -13,16 +13,16 @@ GrandLineX is an out-of-the-box server framework.
 
 
 ### Status
-![Quality Gate Status](https://pop.echo4.eu/api/project_badges/measure?project=GrandLineX-Bundle-Redis&metric=alert_status)
-![Security Rating](https://pop.echo4.eu/api/project_badges/measure?project=GrandLineX-Bundle-Redis&metric=security_rating)
-![Maintainability Rating](https://pop.echo4.eu/api/project_badges/measure?project=GrandLineX-Bundle-Redis&metric=sqale_rating)
-![Reliability Rating](https://pop.echo4.eu/api/project_badges/measure?project=GrandLineX-Bundle-Redis&metric=reliability_rating)
-![Coverage](https://pop.echo4.eu/api/project_badges/measure?project=GrandLineX-Bundle-Redis&metric=coverage)
+![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=GrandlineX_bundle-redis&metric=alert_status)
+![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=GrandlineX_bundle-redis&metric=security_rating)
+![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=GrandlineX_bundle-redis&metric=sqale_rating)
+![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=GrandlineX_bundle-redis&metric=reliability_rating)
+![Coverage](https://sonarcloud.io/api/project_badges/measure?project=GrandlineX_bundle-redis&metric=coverage)
 
 ### Issues
-![Bugs](https://pop.echo4.eu/api/project_badges/measure?project=GrandLineX-Bundle-Redis&metric=bugs)
-![Vulnerabilities](https://pop.echo4.eu/api/project_badges/measure?project=GrandLineX-Bundle-Redis&metric=vulnerabilities)
-![Code Smells](https://pop.echo4.eu/api/project_badges/measure?project=GrandLineX-Bundle-Redis&metric=code_smells)
+![Bugs](https://sonarcloud.io/api/project_badges/measure?project=GrandlineX_bundle-redis&metric=bugs)
+![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=GrandlineX_bundle-redis&metric=vulnerabilities)
+![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=GrandlineX_bundle-redis&metric=code_smells)
 
 
 
