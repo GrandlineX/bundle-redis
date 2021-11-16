@@ -41,7 +41,7 @@ describe('Cache', () => {
        expect(cache?.getRaw()).not.toBeNull()
        expect(cache?.getRaw()).not.toBeUndefined()
   });
-   test('simple set & get', async () => {
+   test('exist', async () => {
         expect(await cache?.exist(testText)).toBeFalsy()
   });
    test('simple set & get', async () => {
