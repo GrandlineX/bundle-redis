@@ -1,14 +1,12 @@
 import { createClient } from 'redis';
 import { CoreCache, ICoreKernelModule, IStore } from '@grandlinex/core';
-import { RedisClientType } from 'redis/dist/lib/client';
 
-type RedisClient = RedisClientType<any, any> | null;
 /**
  * @class RedisCache
  * Multichannel Redis Client
  */
 export default abstract class RedisCache extends CoreCache {
-  client: RedisClient;
+  client: any;
 
   constructor(
     chanel: string,
@@ -37,7 +35,7 @@ export default abstract class RedisCache extends CoreCache {
         port: Number(port),
       },
     });
-    this.client.on('error', (err) => {
+    this.client.on('error', (err: any) => {
       this.error(`Cant connect to ${url}:${port}`);
       this.error(err);
       throw new Error(err);
@@ -74,7 +72,7 @@ export default abstract class RedisCache extends CoreCache {
     await this.client?.flushAll();
   }
 
-  getRaw(): RedisClient {
+  getRaw(): any {
     return this.client;
   }
 
