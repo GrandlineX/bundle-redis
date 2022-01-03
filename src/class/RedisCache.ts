@@ -6,7 +6,7 @@ import { CoreCache, ICoreKernelModule, IStore } from '@grandlinex/core';
  * Multichannel Redis Client
  */
 export default abstract class RedisCache extends CoreCache {
-  client: any;
+  client: ReturnType<typeof createClient> | null;
 
   constructor(
     chanel: string,

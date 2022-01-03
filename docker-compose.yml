@@ -4,6 +4,6 @@ services:
     command: redis-server
     image: redis:alpine
     ports:
-      - "6379:6379"
+      - "6380:6379"
     environment:
       - REDIS_REPLICATION_MODE=master
